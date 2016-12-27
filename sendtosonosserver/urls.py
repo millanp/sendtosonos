@@ -19,5 +19,5 @@ from streamer import urls
 
 urlpatterns = [
     url(r'^admin/', admin.site.urls),
-    url(r'^stream/', urls)
+    url(r'^stream/', include(urls))
 ]
